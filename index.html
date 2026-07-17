@@ -7,10 +7,23 @@
   <meta name="description" content="Relay watches every endpoint your product depends on and alerts your team before customers notice." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=2" />
+  <link rel="stylesheet" href="css/style.css?v=3" />
+  <style>
+    /* Critical, inline (never cached separately from this HTML file):
+       guarantees mobile nav is hidden and hamburger shows below 768px,
+       even if the external stylesheet is stale in the browser/CDN cache. */
+    @media (max-width: 767.98px) {
+      .nav-links, .nav-actions { display: none !important; }
+      .menu-toggle { display: flex !important; }
+    }
+    @media (min-width: 768px) {
+      .menu-toggle { display: none !important; }
+      .mobile-menu { display: none !important; }
+    }
+  </style>
 </head>
 <body>
   <div id="app"></div>
-  <script type="module" src="js/main.js?v=2"></script>
+  <script type="module" src="js/main.js?v=3"></script>
 </body>
 </html>
