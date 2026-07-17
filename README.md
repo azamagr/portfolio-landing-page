@@ -1,4 +1,4 @@
-# portfolio-landing-page
+# relay-landing-page
 
 Week 1 – Full Stack Web Development task: build a clean, responsive landing
 page before wiring up any backend.
@@ -33,7 +33,7 @@ each is a JS file that exports a function returning an HTML string, the same
 "compose small pieces into one page" idea a framework uses, just without JSX:
 
 ```
-portfolio-landing-page/
+relay-landing-page/
 ├── index.html
 ├── css/
 │   └── style.css          # design tokens, all styles, responsive rules
@@ -93,4 +93,4 @@ Pushed as static files — no build step needed:
 2. **Settings → Pages → Source: Deploy from a branch.**
 3. Branch: `main`, folder: `/ (root)`. Save.
 4. Live in a couple of minutes at
-   `https://<your-username>.github.io/portfolio-landing-page/`.
+   `https://<your-username>.github.io/relay-landing-page/`.
