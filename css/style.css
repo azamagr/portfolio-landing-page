@@ -268,11 +268,17 @@ footer { border-top: 1px solid var(--line); padding: clamp(40px, 8vw, 64px) 0; }
 }
 
 /* ~768px: enough room for the full nav instead of a hamburger */
-@media (min-width: 48em) {
+@media (min-width: 768px) {
   .nav-links { display: flex; }
   .nav-actions { display: flex; }
   .menu-toggle { display: none; }
   .mobile-menu { display: none !important; }
+}
+
+/* Defensive: force-hide desktop nav below 768px in case of any override/cache conflict */
+@media (max-width: 767.98px) {
+  .nav-links, .nav-actions { display: none !important; }
+  .menu-toggle { display: flex !important; }
 }
 
 /* Small phones (<380px): tighten a couple of things that feel cramped otherwise */
